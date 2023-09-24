@@ -1,7 +1,13 @@
 import React from 'react';
 import PhonesCard from './PhonesCard';
+import useGetPhones from '../../hook/useGetPhones';
 
 const Phones = ({ phones }) => {
+
+
+  // const [getPhone] = useGetPhones()
+  // console.log(getPhone);
+
   console.log(phones);
   return (
     <div className='py-10'>
