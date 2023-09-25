@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { useOutletContext } from 'react-router-dom';
+import { GlobalContext } from '../../main';
 
 const Login = () => {
+
+  const globalValue = useOutletContext()
+  console.log(globalValue);
+
+  const contextApiValue = useContext(GlobalContext)
+  console.log(contextApiValue);
+
   return (
     <div className='flex items-center justify-center h-screen'>
       <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
